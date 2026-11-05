@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shalonda McFarland, The Church Inspector</title>
+<meta name="description" content="A homepage idea for Houston author Shalonda McFarland and her novel The Church Inspector. Not her official site.">
+<meta property="og:title" content="Shalonda McFarland, The Church Inspector">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Shalonda McFarland. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/shalondamcfarland/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23b0d6f0%22/%3E%3Cpath d=%22M16 3v6M13 6h6M10 28V16l6-6 6 6v12z%22 fill=%22%231d2270%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#b0d6f0;      /* the cover sky */
+  --sky-deep:#8fc0e4;
+  --red:#d3121a;      /* CHURCH red, darkened a touch for text */
+  --navy:#1d2270;     /* Tonia's suit */
+  --ink:#121426;
+  --paper:#ffffff;
+  --road:#5d6c86;     /* the street, darkened for text */
+  --display:"Bodoni Moda",Didot,Georgia,serif;
+  --label:"Oswald","Arial Narrow",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font:400 1.08rem/1.65 var(--display);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.strip{background:var(--navy);color:#fff;font:400 .85rem/1.4 var(--label);text-align:center;padding:.5rem 16px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:var(--ink);padding:.4rem .7rem;z-index:9}
+
+/* hero */
+.hero{height:380vh;position:relative;background:var(--sky)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--sky)}
+.frame{position:absolute;left:50%;top:50%;width:min(60vh,88vw);aspect-ratio:533/800;transform:translate(-50%,-50%)}
+.cam{position:absolute;inset:0;transform-origin:47.8% 67%;will-change:transform}
+.cam>img{position:absolute;inset:0;width:100%;height:100%}
+.cam .plate{box-shadow:0 24px 50px rgba(29,34,112,.28)}
+.ch{opacity:0;will-change:opacity,transform}
+.ch.left{transform-origin:18% 80%}.ch.centre{transform-origin:50% 72%}.ch.right{transform-origin:80% 80%}
+.tick{position:absolute;width:11%;opacity:0;will-change:opacity,transform}
+.tick path{fill:none;stroke:var(--red);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.tick.centre{left:57%;top:38%}.tick.left{left:9%;top:47%}.tick.right{left:81%;top:45%}
+.words{position:absolute;opacity:0;will-change:opacity,transform}
+.words .kicker{font:500 1rem/1 var(--label);text-transform:uppercase;letter-spacing:.08em;color:var(--navy)}
+.words h1{font:500 clamp(2.4rem,4.6vw,3.8rem)/1.02 var(--display);color:var(--red);margin:.5rem 0 .2rem}
+.words h1 span{display:block;font:500 .62em/1.1 var(--label);color:var(--ink);text-transform:uppercase;letter-spacing:.04em}
+.words .line{font:italic 400 1.2rem/1.45 var(--display);max-width:24ch;margin:1rem 0 1.4rem}
+.btns{display:flex;gap:.7rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:46px;font:500 1rem/1 var(--label);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;padding:.8rem 1.2rem;border:2px solid var(--navy);color:var(--navy);background:#fff}
+.btn.solid{background:var(--navy);color:#fff}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+@media (min-width:900px){
+  .words{left:57%;top:50%;transform:translateY(-50%);max-width:30rem}
+}
+@media (max-width:899px){
+  .frame{top:5vh;transform:translateX(-50%);width:min(40vh,70vw)}
+  .words{left:16px;right:16px;bottom:3.5vh}
+  .words h1{font-size:2rem}
+  .words .line{font-size:1.02rem;margin:.5rem 0 .9rem}
+}
+
+@media (max-width:899px) and (max-height:700px){
+  .frame{width:min(31vh,56vw);top:3vh}
+  .words .kicker{display:none}
+  .words .line{font-size:.92rem;margin:.3rem 0 .6rem}
+  .btn{padding:.7rem .9rem;font-size:.9rem}
+}
+.report a:focus-visible,.close a:focus-visible{outline-color:#fff}
+
+/* calm pages */
+section.page{padding:5rem 16px}
+.wrap{max-width:62rem;margin:0 auto}
+h2{font:500 clamp(2rem,4.2vw,2.9rem)/1.05 var(--display);color:var(--red);margin-bottom:1.1rem;text-wrap:balance}
+p+p{margin-top:1rem}
+.label{font:500 .95rem/1.2 var(--label);text-transform:uppercase;letter-spacing:.07em;color:var(--road)}
+
+.book .wrap{display:grid;gap:2.6rem;align-items:start}
+.book .cov{width:min(320px,72vw);box-shadow:0 18px 36px rgba(29,34,112,.25)}
+.book .hook{font:italic 400 1.35rem/1.4 var(--display);margin:0 0 1.2rem}
+.buy{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem}
+.price{margin-top:1rem;font:400 1rem/1.4 var(--label);color:var(--road)}
+@media (min-width:760px){.book .wrap{grid-template-columns:320px 1fr}}
+
+.report{background:var(--navy);color:#fff}
+.report h2{color:#fff}
+.report .lede{color:#d9dcf2;max-width:38rem}
+.ledger{list-style:none;margin-top:2rem;border-top:1px solid #4b51a0}
+.ledger li{display:grid;grid-template-columns:1fr auto;gap:.3rem 1.2rem;padding:1rem 0;border-bottom:1px solid #4b51a0}
+.ledger a{font:500 1.35rem/1.25 var(--display);text-decoration-thickness:1px;text-underline-offset:4px}
+.ledger .kind{font:400 .95rem/1.3 var(--label);text-transform:uppercase;letter-spacing:.06em;color:#c9cde9;align-self:center}
+.ledger p{grid-column:1/-1;color:#d9dcf2;font-size:1rem;margin:0}
+
+.tables{background:var(--sky)}
+.dates{list-style:none;margin-top:1.6rem;border-top:2px solid var(--navy)}
+.dates li{display:grid;grid-template-columns:9.5rem 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid #7fa6c4}
+.dates time{font:500 1.15rem/1.3 var(--label);text-transform:uppercase;color:var(--navy)}
+.dates small{display:block;font-size:.95rem;color:#2d3557}
+@media (max-width:520px){.dates li{grid-template-columns:1fr;gap:.2rem}}
+
+.about .wrap{max-width:40rem}
+.facts{list-style:none;margin-top:1.4rem;border-top:1px solid #c9d4e2}
+.facts li{padding:.7rem 0;border-bottom:1px solid #c9d4e2}
+
+.close{background:var(--ink);color:#fff}
+.close .wrap{max-width:42rem}
+.close h2{color:#fff}
+.close .topics{font:400 1.05rem/1.6 var(--label);text-transform:uppercase;letter-spacing:.05em;color:var(--sky);margin:1rem 0 1.6rem}
+.close .btn{border-color:#fff;color:var(--ink)}
+.close .btn:hover{color:#fff}
+.close .more{margin-top:1.6rem;color:#cfd3e6}
+.close .more a{color:#fff}
+footer{background:var(--navy);color:#e3e5f5;font:400 .9rem/1.4 var(--label);text-align:center;padding:1.3rem 16px}
+
+@media (prefers-reduced-motion:reduce){
+  .hero{height:auto}
+  .stage{position:relative;height:auto;min-height:100svh;padding:3rem 16px;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:center}
+  .frame{position:relative;left:auto;top:auto;transform:none}
+  .ch,.tick{opacity:1}
+  .words{position:relative;opacity:1;left:auto;right:auto;bottom:auto;top:auto;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#book">Skip to the book</a>
+<div class="strip">A homepage idea made by Sparsh Saini for Shalonda McFarland. Not their official site.</div>
+
+<header class="hero">
+  <div class="stage">
+    <div class="frame" aria-hidden="true">
+      <div class="cam" id="cam">
+        <img class="plate" src="img/plate.jpg" alt="" width="1066" height="1600" fetchpriority="high">
+        <img class="ch centre" src="img/church-centre.png" alt="" width="1066" height="1600">
+        <img class="ch left" src="img/church-left.png" alt="" width="1066" height="1600">
+        <img class="ch right" src="img/church-right.png" alt="" width="1066" height="1600">
+        <img class="tonia" src="img/tonia.png" alt="" width="1066" height="1600" fetchpriority="high">
+        <svg class="tick centre" viewBox="0 0 60 50"><path d="M6 27 L22 42 L54 8"/></svg>
+        <svg class="tick left" viewBox="0 0 60 50"><path d="M6 27 L22 42 L54 8"/></svg>
+        <svg class="tick right" viewBox="0 0 60 50"><path d="M6 27 L22 42 L54 8"/></svg>
+      </div>
+    </div>
+    <div class="words" id="words">
+      <p class="kicker">A novel by Shalonda McFarland</p>
+      <h1>The Church <span>Inspector</span></h1>
+      <p class="line">&ldquo;She never thought she&rsquo;d be scrutinizing churches…undercover!&rdquo;</p>
+      <div class="btns">
+        <a class="btn solid" href="#book">About the book</a>
+        <a class="btn" href="https://amazon.com/dp/1954561024">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page book" id="book">
+  <div class="wrap">
+    <img class="cov" src="img/cover-sm.jpg" alt="The Church Inspector cover: Tonia in a navy suit with a tablet, standing in the middle of a street lined with churches." width="400" height="600" loading="lazy">
+    <div>
+      <h2>The Church Inspector</h2>
+      <p class="hook">Attorney Tonia Hall is thrust into a world she's been trying her best to avoid: the church.</p>
+      <p>Pastor Grant hires her to visit a group of struggling churches unannounced, sit among the congregation, and write up what she sees. Each pastor gets her inspection report. Some of what she witnesses only makes her want to keep the church at arm's length.</p>
+      <p>Then one of the pastors starts digging into her past.</p>
+      <p class="price">Ebook $5. Paperback $15.</p>
+      <div class="buy">
+        <a class="btn solid" href="https://amazon.com/dp/1954561024">Buy on Amazon</a>
+        <a class="btn" href="https://www.amazon.com/Shalonda-McFarland/e/B00K82K3OS">All her books</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page report" id="books">
+  <div class="wrap">
+    <h2>Eight books so far</h2>
+    <p class="lede">Fiction that tells a story with a message, and non-fiction that offers help for Christian life.</p>
+    <ul class="ledger">
+      <li><a href="https://www.shalondamcfarland.com/sunday-swap.html">Sunday Swap</a><span class="kind">Novel</span><p>Her first novel written in first person. She wrote the first draft in two months.</p></li>
+      <li><a href="https://www.shalondamcfarland.com/the-win.html">The Win</a><span class="kind">Duology</span><p>Two books, with <a href="https://www.shalondamcfarland.com/the-win-2.html">The Win 2</a>.</p></li>
+      <li><a href="https://www.shalondamcfarland.com/praying-with-purpose.html">Praying with Purpose</a><span class="kind">Non-fiction</span><p>With its companion, <a href="https://www.shalondamcfarland.com/praying-with-purpose-over-my-pastor.html">Praying with Purpose: Over My Pastor</a>.</p></li>
+      <li><a href="https://www.shalondamcfarland.com/a-christians-worst-witness.html">A Christian's Worst Witness</a><span class="kind">Non-fiction</span><p>And <a href="https://www.shalondamcfarland.com/a-christians-worst-witness-workbook.html">the workbook</a> that goes with it.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="page tables" id="tables">
+  <div class="wrap">
+    <h2>Find her at a table</h2>
+    <p>Shalonda signs at Houston book fairs every autumn. These are the ones on her events page.</p>
+    <ul class="dates">
+      <li><time datetime="2026-10-23">23 and 24 Oct 2026</time><div>National Black Book Festival<small>Fallbrook Church (Brook Sports Facility), Houston</small></div></li>
+      <li><time datetime="2026-10-17">17 Oct 2026</time><div>Tex-Indie Author Book Fair<small>Just Play Sports Facility, Houston</small></div></li>
+      <li><time datetime="2025-11-15">15 Nov 2025</time><div>Books &amp; More<small>Missouri City, Texas</small></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="page about" id="about">
+  <div class="wrap">
+    <h2>Shalonda</h2>
+    <p>Shalonda McFarland is a Houston author of clean Christian fiction and non-fiction. She is also a songwriter, with one gospel album to her name, You're Glorious Project, sung with Houston singers. And she teaches people how to win with money, God's way.</p>
+    <p>She's married, with five children. When she couldn't think of a name for the pastor in Sunday Swap, her son Doug Jr came up with Darnell.</p>
+    <ul class="facts">
+      <li>Business degree from the University of Houston, with a minor in Latin American Studies</li>
+      <li>Played the French horn, but wanted to play the saxophone</li>
+      <li>Her title song You're Glorious was on the Texas Gospel Announcers Guild CD A Message In Our Music</li>
+    </ul>
+  </div>
+</section>
+
+<section class="page close" id="speak">
+  <div class="wrap">
+    <h2>Book Shalonda to speak</h2>
+    <p>She speaks at conferences, meetings and workshops, and sits on author panels.</p>
+    <p class="topics">Her topics: worship, finances, becoming an author, marriage and womanhood.</p>
+    <a class="btn" href="https://www.shalondamcfarland.com/contact.html">Send her the details</a>
+    <p class="more">Bulk orders of any book go through the same <a href="https://www.shalondamcfarland.com/contact.html">contact page</a>. You can also follow her on <a href="https://www.instagram.com/shalondamcfarland/">Instagram</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>A mockup made by Sparsh Saini for Shalonda McFarland. Not affiliated, not live.</footer>
+
+<script>
+(() => {
+  const rm = matchMedia('(prefers-reduced-motion: reduce)');
+  rm.addEventListener('change', () => location.reload());
+  if (rm.matches) return;
+  const hero = document.querySelector('.hero'), cam = document.getElementById('cam'), words = document.getElementById('words');
+  const order = ['centre', 'left', 'right'];
+  const ch = order.map(k => cam.querySelector('.ch.' + k)), ticks = order.map(k => cam.querySelector('.tick.' + k));
+  const desk = matchMedia('(min-width:900px)');
+  const cl = x => x < 0 ? 0 : x > 1 ? 1 : x;
+  const seg = (p, a, b) => cl((p - a) / (b - a));
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  let top = 0, span = 1, ticking = false;
+  const measure = () => { top = hero.offsetTop; span = hero.offsetHeight - innerHeight; };
+  const draw = () => {
+    ticking = false;
+    const p = cl((scrollY - top) / span);
+    // camera pulls back from the tablet in her hands to the whole street
+    const c = ease(seg(p, 0.02, 0.7));
+    const shift = desk.matches ? -0.45 * ease(seg(p, 0.78, 0.95)) : 0;
+    cam.style.transform = `translateX(${shift * 100}%) scale(${3 - 2 * c})`;
+    // each church she inspects gets its colour back, then the red tick lands
+    const starts = [0.2, 0.38, 0.54];
+    starts.forEach((s, i) => {
+      const a = seg(p, s, s + 0.12), t = ease(a);
+      ch[i].style.opacity = a;
+      ch[i].style.transform = `translateY(${(1 - t) * 1.5}%) scale(${1.02 - 0.02 * t})`;
+      const k = seg(p, s + 0.1, s + 0.16);
+      ticks[i].style.opacity = k;
+      ticks[i].style.transform = `scale(${1.4 - 0.4 * ease(k)}) rotate(${(1 - k) * -12}deg)`;
+    });
+    const wd = seg(p, 0.82, 0.96);
+    words.style.opacity = wd;
+    words.style.visibility = wd > 0.05 ? 'visible' : 'hidden';
+    words.style.transform = desk.matches ? `translateY(calc(-50% + ${(1 - wd) * 16}px))` : `translateY(${(1 - wd) * 16}px)`;
+  };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(draw); } };
+  addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', () => { measure(); req(); });
+  measure(); draw();
+})();
+</script>
+</body>
+</html>
